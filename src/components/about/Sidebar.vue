@@ -41,6 +41,7 @@ export default {
   width: 5em
   cursor: pointer
   min-width: 2em
+  min-height: 3em
   transition: .3s
   border-top: 3px solid #F48024
   &:hover
