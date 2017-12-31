@@ -10,7 +10,7 @@
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js",
     "deploy": "node ./node_modules/vue-gh-pages/index.js",
-    "homepage": "https://github.com/Ethaan/ethaan.github.io"
+    "homepage": "https://ethaan.github.io/www/"
   },
   "dependencies": {
     "lodash": "^4.17.4",
