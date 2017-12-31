@@ -13,7 +13,10 @@
     "homepage": "https://github.com/Ethaan/ethaan.github.io"
   },
   "dependencies": {
+    "lodash": "^4.17.4",
+    "moment": "^2.20.1",
     "vue": "^2.5.2",
+    "vue-awesome": "^2.3.4",
     "vue-gh-pages": "^1.7.0",
     "vue-router": "^3.0.1"
   },
