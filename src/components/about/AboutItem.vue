@@ -3,14 +3,17 @@
     .about-item-info
       h1.title Ethan Escareño Rosano
       h3.subtitle Software Developer | Reynosa, Tamaulipas, Mexico.
-      a.stackoverflow-badge(href="https://stackoverflow.com/users/3961546/ethaan" target="_blank")
-        img(
-          alt="profile for Ethaan at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
-          src="https://stackoverflow.com/users/flair/3961546.png?theme=dark"
-          width="208"
-          height="58"
-          title="profile for Ethaan at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
-        )
+      .badges
+        a(href="https://stackoverflow.com/users/3961546/ethaan" target="_blank")
+          img(
+            alt="profile for Ethaan at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
+            src="https://stackoverflow.com/users/flair/3961546.png?theme=dark"
+            width="208"
+            height="58"
+            title="profile for Ethaan at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
+          )
+        a(href="https://www.codewars.com/users/Ethaan" target="_blank")
+          img(src="https://www.codewars.com/users/Ethaan/badges/micro")
     .about-item-description
       .images-gallery
         img(v-for="image in ethanImages" v-bind:src="image")
@@ -68,9 +71,11 @@ export default {
 .about-item-info > img
   margin-top: .8em
 
-.stackoverflow-badge
-  position: absolute
-  margin-top: 1em
+.badges
+  display: flex
+  flex-direction: column
+  align-items:center
+  margin-top: 2em
 
 .title
   font-size: 5em
@@ -111,9 +116,6 @@ export default {
     margin-left: 0
     margin-top: 4em
 
-  .stackoverflow-badge
-    margin-left: 14.5em
-
 @media $breakpoints-max.sm
   .title
     text-align: center
@@ -130,8 +132,4 @@ export default {
 
   .title::first-letter
     font-size: 1em
-
-  .stackoverflow-badge
-    margin-left: 4.5em
-
 </style>
