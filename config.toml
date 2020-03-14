@@ -1,0 +1,16 @@
+baseURL = "https://ethaan.github.io/"
+languageCode = "en-us"
+title = "Ethan Escareño Rosano"
+theme = "tailwindcss"
+
+[taxonomies]
+    tag = "tags"
+
+[permalinks]
+    posts = "/posts/:year/:month/:title/"
+
+[params]
+    author = "Ethan Escareño"
+    avatar = "ethan.jpeg"
+    description = "Ethan Escareño Rosano, Software Engineer"
+    tagline = "Software Engineer interested on Python, Javascript and Swift"
