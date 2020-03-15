@@ -3,9 +3,12 @@ languageCode = "en-us"
 title = "Ethan Escareño Rosano"
 theme = "tailwindcss"
 publishDir = "docs"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 
 [taxonomies]
-    tag = "software"
+    tag = "tags"
+    languages = "languages"
 
 [permalinks]
     posts = "/posts/:year/:month/:title/"
