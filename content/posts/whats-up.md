@@ -5,8 +5,6 @@ draft: false
 tags: ["life"]
 ---
 
-## Whats up
-
 I'been always thinking on writting stuff on the WWW, but never really get full into it, until now, so i would like to give the welcome to what inteend to be be my new blog/site where you can find all about the things that i'm most inerested on, you can expect to find stuff such as
 
 - Music (mostly punk)
