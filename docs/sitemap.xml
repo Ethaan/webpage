@@ -8,7 +8,17 @@
   </url>
   
   <url>
+    <loc>https://ethaan.github.io/webpage/tags/life/</loc>
+    <lastmod>2020-03-14T14:06:05-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ethaan.github.io/webpage/posts/</loc>
+    <lastmod>2020-03-14T14:06:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ethaan.github.io/webpage/tags/</loc>
     <lastmod>2020-03-14T14:06:05-05:00</lastmod>
   </url>
   
@@ -18,7 +28,7 @@
   </url>
   
   <url>
-    <loc>https://ethaan.github.io/webpage/software/</loc>
+    <loc>https://ethaan.github.io/webpage/languages/</loc>
   </url>
   
 </urlset>
