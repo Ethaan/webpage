@@ -8,7 +8,6 @@ pygmentsUseClasses = true
 
 [taxonomies]
     tag = "tags"
-    languages = "languages"
 
 [permalinks]
     posts = "/posts/:year/:month/:title/"

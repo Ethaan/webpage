@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "deploy": "bin/deploy.sh"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ethaan/www.git"
