@@ -1,4 +1,4 @@
-baseURL = "https://ethaan.github.io/webpage/"
+baseURL = "https://ethaan.js.org/"
 languageCode = "en-us"
 title = "Ethan Escareño Rosano"
 theme = "tailwindcss"

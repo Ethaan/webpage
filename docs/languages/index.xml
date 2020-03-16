@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Languages on Ethan Escareño Rosano</title>
-    <link>https://ethaan.github.io/webpage/languages/</link>
+    <link>https://ethaan.js.org/languages/</link>
     <description>Recent content in Languages on Ethan Escareño Rosano</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://ethaan.github.io/webpage/languages/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ethaan.js.org/languages/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
