@@ -17,11 +17,11 @@ Saying this, lets start writting some JS and then the equivalent on Typescript.
 
 ```javascript
 // index.ts
-const range = (start) => {
-  let current = 0;
+const range = (start, end) => {
+  let current = start;
   const response = [];
 
-  while (current < start) {
+  while (current < end) {
     response.push(current);
     current += 1;
   }
@@ -29,16 +29,14 @@ const range = (start) => {
   return response;
 };
 
-console.log(range(100)) // Output: [0, 1, 2, 3, 4, 5, 6, 7, ...]
+console.log(range(50, 100)) // Output: [0, 1, 2, 3, 4, 5, 6, 7, ...]
 
 ```
-
-
 
 This will work, since Typescript run any javascript program, now lets writte this as Typescript code
 
-```type
-const range = (start: number): number[] => {
+```typescript
+const range = (start: number, end: number): number[] => {
   let current = 0;
   const response = [];
 
@@ -51,36 +49,33 @@ const range = (start: number): number[] => {
 };
 ```
 
-
-
 See the difference?
 
-This function be read as **the function range accept one parameter `start` of type `number` (start: number) and return an `array` of `numbers` (: number[])**
+This function be read as **the function range accept one parameter start of type number (start: number) and return an array of numbers (: number[])**
 
-This is just the surface, what if the first parameter is an object? like [props in React](https://es.reactjs.org/docs/render-props.html) 
+This is just the surface, what if the first parameter is an object?
 
-Lets see it
-
-```typescript
-interface Props {
-  firstParameter: number;
-}
-
-const myFunctionWithObjectParams = (props: Props) => {...}
-```
-
-Amazing, what if we want to have `optional` params? AKA it can be `null` or `undefined`, easy
+Lets see it on our same example
 
 ```typescript
 interface Props {
-  firstParameter: number;
-  secondParameter?: string; // Note the "?" next to the param name
+  end: number;
+  start: number;
 }
 
-const myFunctionWithObjectParams = (props: Props) => {...}
+const range = (props: Props) => {...}
 ```
 
+Amazing, what if we want to make params optional?
 
+```typescript
+interface Props {
+  end: number;
+  start?: number; // Note the "?" next to the param name
+}
+
+const range = (props: Props) => {...}
+```
 
 ## With React
 
