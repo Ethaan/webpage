@@ -6,10 +6,20 @@
     <description>Recent content on Ethan Escareño Rosano</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Mar 2020 13:16:04 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2020 18:18:03 -0500</lastBuildDate>
     
 	<atom:link href="https://ethaan.js.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tuples for Fun</title>
+      <link>https://ethaan.js.org/posts/2020/04/tuples-for-fun/</link>
+      <pubDate>Wed, 01 Apr 2020 18:18:03 -0500</pubDate>
+      
+      <guid>https://ethaan.js.org/posts/2020/04/tuples-for-fun/</guid>
+      <description>As i already mention on my previous posts, Python Javascript(ts) and Swift are some of my favorite languages out there, i really enjoy writting programs with them, and this past days i come into how tuples works on this 3 languages, which one have a better API that the other (spoiler: Python)
+Tuples So whats a tuple? there might be many different ways to describe a Tuple Data type, but the easiest one i can think of right now is like.</description>
+    </item>
     
     <item>
       <title>Baby Steps Typescript</title>
