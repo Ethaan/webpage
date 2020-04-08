@@ -11,9 +11,9 @@ tags: ["tech", "typescript", "react"]
 
 **NOTE** If you are Totally new on Typescript, check out this amazing [Understanding TypeScript’s type notation](https://2ality.com/2018/04/type-notation-typescript.html) blog post
 
-If you are unsure if Typescript is or not a superset and what actually superset and subset means i recommend you to read [this SO](https://stackoverflow.com/questions/29918324/is-typescript-really-a-superset-of-javascript) post
+If you are unsure if Typescript is or not a superset and what actually superset and subset means I recommend you to read [this SO](https://stackoverflow.com/questions/29918324/is-typescript-really-a-superset-of-javascript) post
 
-Saying this, lets start writting some JS and then the equivalent on Typescript.
+Saying this, let's start writting some JS and then the equivalent in Typescript.
 
 ```javascript
 // index.ts
@@ -33,7 +33,7 @@ console.log(range(50, 100)) // Output: [0, 1, 2, 3, 4, 5, 6, 7, ...]
 
 ```
 
-This will work, since Typescript run any javascript program, now lets writte this as Typescript code
+This will work, since Typescript runs any javascript program, now let's write this as Typescript code
 
 ```typescript
 const range = (start: number, end: number): number[] => {
@@ -51,11 +51,11 @@ const range = (start: number, end: number): number[] => {
 
 See the difference?
 
-This function be read as **the function range accept one parameter start of type number (start: number) and return an array of numbers (: number[])**
+This function can be read as **the range function accepts two parameters, start and end which have a type of number (start: number, end: number) and returns an array of numbers (: number[])**
 
 This is just the surface, what if the first parameter is an object?
 
-Lets see it on our same example
+Let's see it using the same example
 
 ```typescript
 interface Props {
@@ -92,11 +92,11 @@ const Component: React.FC<ComponentProps> = ({ header, profileId }): React.React
 export default Profile;
 ```
 
-See that? since `Component` is a function that return something, you can read this component like
+See that? since `Component` is a function that returns something, you can read this component like:
 
-**the function Component of type React.FC (FuncionComponent) with one parameter of type `ComponentProps`(: React.FC<ComponentProps>) that returns a ReactElement (: React.ReactElement)**
+**the Component function of type React.FC (FuncionComponent) accepts one parameter of type `ComponentProps`(: React.FC<ComponentProps>) that returns a ReactElement (: React.ReactElement)**
 
-Thats cool right? as you can start noticing, you are still writting the same Javascript code, but now you are declaring types, in a more readable way (it gets actually readable the more you use it)
+That's cool right? as you can start noticing, you are still writting the same Javascript code, but now you are declaring types, in a more readable way (it get's actually readable the more you use it)
 
 **.tsx** Notice the use of `index.tsx` instead of `.ts` and this is because our react components use [JSX](https://es.reactjs.org/docs/introducing-jsx.html), so the compiler will know what to do with `<div>Hello JSX</div>`
 

@@ -25,8 +25,8 @@
     
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Tuples for Fun - Ethan Escareño Rosano">
-    <meta name="twitter:description" content="As i already mention on my previous posts, Python Javascript(ts) and Swift are some of my favorite languages out there, i really enjoy writting programs with them, and this past days i come into how tuples works on this 3 languages, which one have a better API that the other (spoiler: Python)
-Tuples So whats a tuple? there might be many different ways to describe a Tuple Data type, but the easiest one i can think of right now is like.">
+    <meta name="twitter:description" content="As I have already mentioned on my previous posts, Python Javascript(ts) and Swift are some of my favorite languages out there, I really enjoy writting software with them, and this past days I got into how tuples work in these 3 languages.
+Tuples So what is a tuple? there might be many different ways to describe a Tuple Data type, but the easiest one I can think of right now is like.">
     <meta name="twitter:site" content="https://ethaan.js.org/">
     <meta name="twitter:creator" content="">
     <meta name="twitter:image" content="https://ethaan.js.org/ethan.jpeg">
@@ -35,8 +35,8 @@ Tuples So whats a tuple? there might be many different ways to describe a Tuple 
     <meta property="og:locale" content="">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Tuples for Fun - Ethan Escareño Rosano">
-    <meta property="og:description" content="As i already mention on my previous posts, Python Javascript(ts) and Swift are some of my favorite languages out there, i really enjoy writting programs with them, and this past days i come into how tuples works on this 3 languages, which one have a better API that the other (spoiler: Python)
-Tuples So whats a tuple? there might be many different ways to describe a Tuple Data type, but the easiest one i can think of right now is like.">
+    <meta property="og:description" content="As I have already mentioned on my previous posts, Python Javascript(ts) and Swift are some of my favorite languages out there, I really enjoy writting software with them, and this past days I got into how tuples work in these 3 languages.
+Tuples So what is a tuple? there might be many different ways to describe a Tuple Data type, but the easiest one I can think of right now is like.">
     <meta property="og:url" content="https://ethaan.js.org/posts/2020/04/tuples-for-fun/">
     <meta property="og:site_name" content="Ethan Escareño Rosano">
     <meta property="og:image" content="https://ethaan.js.org/ethan.jpeg">
@@ -44,8 +44,8 @@ Tuples So whats a tuple? there might be many different ways to describe a Tuple 
     <title>Tuples for Fun - Ethan Escareño Rosano</title>
 
     <meta name="author" content="Ethan Escareño">
-    <meta name="description" content="As i already mention on my previous posts, Python Javascript(ts) and Swift are some of my favorite languages out there, i really enjoy writting programs with them, and this past days i come into how tuples works on this 3 languages, which one have a better API that the other (spoiler: Python)
-Tuples So whats a tuple? there might be many different ways to describe a Tuple Data type, but the easiest one i can think of right now is like.">
+    <meta name="description" content="As I have already mentioned on my previous posts, Python Javascript(ts) and Swift are some of my favorite languages out there, I really enjoy writting software with them, and this past days I got into how tuples work in these 3 languages.
+Tuples So what is a tuple? there might be many different ways to describe a Tuple Data type, but the easiest one I can think of right now is like.">
 
     
     
@@ -85,38 +85,38 @@ Tuples So whats a tuple? there might be many different ways to describe a Tuple 
         
         
 <article class="mb-12">
-    <p>As i already mention on my previous posts, Python Javascript(ts) and Swift are some of my favorite languages out there, i really enjoy writting programs with them, and this past days i come into how tuples works on this 3 languages, which one have a better API that the other (spoiler: Python)</p>
+    <p>As I have already mentioned on my previous posts, Python Javascript(ts) and Swift are some of my favorite languages out there, I really enjoy writting software with them, and this past days I got into how tuples work in these 3 languages.</p>
 <h3 id="tuples">Tuples</h3>
-<p>So whats a tuple? there might be many different ways to describe a Tuple Data type, but the easiest one i can think of right now is like.</p>
-<p>*a tuple is a data structure that is inmutable and have they elements in orderer sequence&rdquo;</p>
-<p>Pretty simple right? is something similar to an array, but as mentioned above since it can be mutated, there is no such things as <code>tuple.remove</code> which means its a more simple and easy way to structure data when you know how the data will be.</p>
-<p>Okay enought wording, lets take a look into tuples in our favorite languages.</p>
+<p>So what is a tuple? there might be many different ways to describe a Tuple Data type, but the easiest one I can think of right now is like.</p>
+<p>*A tuple is a data structure that is immutable and has its elements in an ordered sequence&rdquo;</p>
+<p>Pretty simple right? is something similar to an array, but as mentioned above since it can&rsquo;t be mutated, there is no such thing as <code>tuple.remove</code> which means it is more simple.</p>
+<p>Okay enough wording, let&rsquo;s take a look into tuples using our favorite languages.</p>
 <h2 id="javascript">Javascript</h2>
-<p>As Javascript is well Javascript, there is no such thing as tuples in they API as <code>Object.create</code> or <code>Array.from</code> but still you can still get a sense of tuples, if you use react you can see something like <code>[value, setValue] = useState(value)</code>.</p>
-<p>Did you see that? it looks like an this can be also know as <code>destructuring assignment</code> but here we can think on <code>useState</code> as a function that return a tuple like.</p>
+<p>As Javascript is well&hellip; Javascript, there is no such thing as tuples in its API as <code>Object.create</code> or <code>Array.from</code> but you can still get a sense of tuples. If you use react you can see something like <code>[value, setValue] = useState(value)</code>.</p>
+<p>Did you see that? this can also be known as <code>destructuring assignment</code> but here we can think on <code>useState</code> as a function that returns a tuple like.</p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">useState</span> <span class="o">=</span> <span class="p">(</span><span class="nx">defaultValue</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
   <span class="k">return</span> <span class="p">[</span><span class="nx">defaultValue</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">defaultValue</span><span class="p">]</span>
 <span class="p">}</span> 
 </code></pre></div><h2 id="swift">Swift</h2>
-<p>In the other hand, Swift give us an API to use tuples, take the following example</p>
+<p>In the other hand, Swift gives us an API to use tuples, take the following example</p>
 <div class="highlight"><pre class="chroma"><code class="language-swift" data-lang="swift"><span class="kd">let</span> <span class="nv">example</span> <span class="p">=</span> <span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 
 <span class="bp">print</span><span class="p">(</span><span class="n">example</span><span class="p">.</span><span class="mi">0</span><span class="p">)</span>
 <span class="bp">print</span><span class="p">(</span><span class="n">example</span><span class="p">.</span><span class="mi">1</span><span class="p">)</span>
-</code></pre></div><p>Note how we access tuple values using indexes such as an array, and thats because tuples are a list of values, but they are wrapped in parentesis</p>
-<p>Nollowing what the tuple definition talk about, <code>tuples</code> are inmutables which means</p>
+</code></pre></div><p>Note how we access tuple values using indexes such as an array, and that&rsquo;s because tuples are a list of values, but they are wrapped in parentesis.</p>
+<p>Knowing what the definition of a tuple is, the following example is invalid.</p>
 <div class="highlight"><pre class="chroma"><code class="language-swift" data-lang="swift"><span class="n">example</span><span class="p">.</span><span class="mi">0</span> <span class="p">=</span> <span class="kc">false</span> <span class="c1">// will throw an error because you can&#39;t change the tuple value</span>
-</code></pre></div><p>Notice how <code>example</code> dosen&rsquo;t really have any kind of API available for us.</p>
+</code></pre></div><p>Notice how <code>example</code> doesn&rsquo;t really have any kind of API available for us.</p>
 <p><img src="/tuples.png" alt="tuples swift" title="Tuple API none"></p>
 <h2 id="python">Python</h2>
-<p>Python tuples are similar to Swift tuples, but with some different API usages, lets take a look to a normal tuple definition</p>
+<p>Python tuples are similar to Swift tuples, but with some different API usages, let&rsquo;s take a look into a normal tuple definition</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">example</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&#34;is&#34;</span><span class="p">,</span> <span class="s2">&#34;this&#34;</span><span class="p">,</span> <span class="s2">&#34;an&#34;</span><span class="p">,</span> <span class="s2">&#34;array&#34;</span><span class="p">)</span> <span class="o">//</span> <span class="n">you</span> <span class="n">can</span> <span class="n">also</span> <span class="n">do</span> <span class="n">example</span> <span class="o">=</span> <span class="s2">&#34;is&#34;</span><span class="p">,</span> <span class="s2">&#34;this&#34;</span><span class="p">,</span> <span class="s2">&#34;an&#34;</span><span class="p">,</span> <span class="s2">&#34;array&#34;</span>
 
 <span class="k">print</span><span class="p">(</span><span class="n">example</span><span class="p">)</span> <span class="o">//</span> <span class="p">(</span><span class="s1">&#39;is&#39;</span><span class="p">,</span> <span class="s1">&#39;this&#39;</span><span class="p">,</span> <span class="s1">&#39;an&#39;</span><span class="p">,</span> <span class="s1">&#39;array&#39;</span><span class="p">)</span>
 </code></pre></div><p>and again, you can&rsquo;t assign new values to existing tuples, for example.</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">example</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;lol?&#34;</span> <span class="o">//</span> <span class="ne">TypeError</span><span class="p">:</span> <span class="s1">&#39;example&#39;</span> <span class="nb">object</span> <span class="n">does</span> <span class="ow">not</span> <span class="n">support</span> <span class="n">item</span> <span class="n">assignment</span>
 </code></pre></div><h2 id="why-tuples">Why tuples.</h2>
-<p>I think this is the most important question, why <code>useState</code> simply don&rsquo;t return an object with <code>{ value, setValue }</code>? why using tuples when you can return an <code>array</code>? and the answer to that question is because tuples have fixed values, where you can&rsquo;t add or remove values, but still iterate over them or find values inside them, a good example of tuples in Swift for example is to return <code>httpCalls</code> response</p>
+<p>I think this is the most important question, why doesn&rsquo;t <code>useState</code> simply return an object with <code>{ value, setValue }</code>? why using tuples when you can return an <code>array</code>? and the answer to those questions is because tuples have fixed values, where you can&rsquo;t add or remove values, but still iterate over them or find values inside them, a good example of tuples in Swift for example is to return <code>httpCalls</code> responses</p>
 <div class="highlight"><pre class="chroma"><code class="language-swift" data-lang="swift"><span class="kd">func</span> <span class="nf">getStats</span><span class="p">(...)</span> <span class="p">{</span>
     <span class="p">...</span>
     <span class="k">return</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="err">&#39;</span><span class="n">message</span><span class="err">&#39;</span><span class="p">)</span>

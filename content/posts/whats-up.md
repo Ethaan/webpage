@@ -5,24 +5,24 @@ draft: false
 tags: ["life"]
 ---
 
-I'been always thinking on writting stuff on the WWW, but never really get full into it, until now, so i would like to give the welcome to what inteend to be be my new blog/site where you can find all about the things that i'm most inerested on, you can expect to find stuff such as
+I've always thought on writting stuff on the WWW, but I never got full hands to it, until now, so I would like to welcome you to what intends to be my new blog/site where you can find all about the things that I'm most interested in, you can expect to find stuff such as:
 
 - Music (mostly punk)
-- Programming (Python, Javascritp, Swift and bit of everything)
+- Programming (Python, Javascript, Swift and bit of everything)
 - WWII
 - Podcast
 - RPG games
 
-Before digging into different topics i would like Introduce myself, my name is Ethan Escareño Rosano, and i'm from Reynosa, Tamaulipas, Mexico at the moment of writting this post i work as a Software Engineer on different projects around the globe, more exactly on Web Development, but i hope to someday in the short-future start my own startup
+Before digging into different topics I would like introduce myself. My name is Ethan Escareño Rosano, and I'm from Reynosa, Tamaulipas, Mexico, at the moment of writting this post I work as a Software Engineer on different projects around the globe, more exactly on Web Development, but I hope to someday in the short-future start my own startup.
 
-I'm gradutated from the Universidad Tecnologica de Tamaulipas Norte with an Engineering degree on Network and telecomunications
+I'm gradutated from the Universidad Tecnologica de Tamaulipas Norte with an Engineering degree on Network and Telecomunications.
 
-Did some IT jobs for relative "big" companies here on Reynosa before moving 100% remote as a software engineer
+Did some IT jobs for relative "big" companies here on Reynosa before moving 100% remote as a software engineer.
 
-I do enjoy to 1 and only 1 video game on the PC named [tibia](http://tibia.com/) and made some [small]()https://github.com/Ethaan/nodejs-tibia-api [open](https://github.com/Ethaan/medivia-python-api) [source projects](https://github.com/ethkat/tibia-ts3-teamspeakbot) for it, i used to enjoy playing soccer (alot) but right now i just don't find it any funny, mostly because i'm really bad at it
+I enjoy only 1 PC game called [tibia](http://tibia.com/) and I have made some [small]()https://github.com/Ethaan/nodejs-tibia-api [open](https://github.com/Ethaan/medivia-python-api) [source projects](https://github.com/ethkat/tibia-ts3-teamspeakbot) for it. I used to enjoy playing soccer (a lot) but right now I just don't find it fun anymore, mostly because I'm really bad at it.
 
-Among my favorite bands of all time i must say [no somos marineros](https://nosomosmarineros.bandcamp.com/) is my favorite at the moment, together with [touche amore](https://toucheamore.bandcamp.com/), [title fight](https://titlefightmusic.bandcamp.com/) and [joliette](https://joliette.bandcamp.com/) 
+Among my favorite bands of all times I must say [no somos marineros](https://nosomosmarineros.bandcamp.com/) is my favorite at the moment, along with [touche amore](https://toucheamore.bandcamp.com/), [title fight](https://titlefightmusic.bandcamp.com/) and [joliette](https://joliette.bandcamp.com/) 
 
-And i think thats the most i would like to share about my personal life
+And I think that's all I want to share about my personal life for now.
 
 shwooz.

@@ -17,8 +17,8 @@
       <pubDate>Wed, 01 Apr 2020 18:18:03 -0500</pubDate>
       
       <guid>https://ethaan.js.org/posts/2020/04/tuples-for-fun/</guid>
-      <description>As i already mention on my previous posts, Python Javascript(ts) and Swift are some of my favorite languages out there, i really enjoy writting programs with them, and this past days i come into how tuples works on this 3 languages, which one have a better API that the other (spoiler: Python)
-Tuples So whats a tuple? there might be many different ways to describe a Tuple Data type, but the easiest one i can think of right now is like.</description>
+      <description>As I have already mentioned on my previous posts, Python Javascript(ts) and Swift are some of my favorite languages out there, I really enjoy writting software with them, and this past days I got into how tuples work in these 3 languages.
+Tuples So what is a tuple? there might be many different ways to describe a Tuple Data type, but the easiest one I can think of right now is like.</description>
     </item>
     
     <item>
@@ -29,8 +29,8 @@ Tuples So whats a tuple? there might be many different ways to describe a Tuple 
       <guid>https://ethaan.js.org/posts/2020/03/baby-steps-typescript/</guid>
       <description>Intro Typescript as the repo and many other people mention is a superset of JavaScript that compiles to clean JavaScript output.
 NOTE If you are Totally new on Typescript, check out this amazing Understanding TypeScript’s type notation blog post
-If you are unsure if Typescript is or not a superset and what actually superset and subset means i recommend you to read this SO post
-Saying this, lets start writting some JS and then the equivalent on Typescript.</description>
+If you are unsure if Typescript is or not a superset and what actually superset and subset means I recommend you to read this SO post
+Saying this, let&amp;rsquo;s start writting some JS and then the equivalent in Typescript.</description>
     </item>
     
     <item>
@@ -39,8 +39,8 @@ Saying this, lets start writting some JS and then the equivalent on Typescript.<
       <pubDate>Sat, 14 Mar 2020 14:06:05 -0500</pubDate>
       
       <guid>https://ethaan.js.org/posts/2020/03/whats-up/</guid>
-      <description>I&amp;rsquo;been always thinking on writting stuff on the WWW, but never really get full into it, until now, so i would like to give the welcome to what inteend to be be my new blog/site where you can find all about the things that i&amp;rsquo;m most inerested on, you can expect to find stuff such as
- Music (mostly punk) Programming (Python, Javascritp, Swift and bit of everything) WWII Podcast RPG games  Before digging into different topics i would like Introduce myself, my name is Ethan Escareño Rosano, and i&amp;rsquo;m from Reynosa, Tamaulipas, Mexico at the moment of writting this post i work as a Software Engineer on different projects around the globe, more exactly on Web Development, but i hope to someday in the short-future start my own startup</description>
+      <description>I&amp;rsquo;ve always thought on writting stuff on the WWW, but I never got full hands to it, until now, so I would like to welcome you to what intends to be my new blog/site where you can find all about the things that I&amp;rsquo;m most interested in, you can expect to find stuff such as:
+ Music (mostly punk) Programming (Python, Javascript, Swift and bit of everything) WWII Podcast RPG games  Before digging into different topics I would like introduce myself.</description>
     </item>
     
   </channel>
