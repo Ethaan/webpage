@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ethan Escareño Rosano</title>
+    <link>https://ethaan.js.org/</link>
+    <description>Recent content on Ethan Escareño Rosano</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Apr 2020 18:18:03 -0500</lastBuildDate>
+    
+	<atom:link href="https://ethaan.js.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tuples for Fun</title>
+      <link>https://ethaan.js.org/posts/2020/04/tuples-for-fun/</link>
+      <pubDate>Wed, 01 Apr 2020 18:18:03 -0500</pubDate>
+      
+      <guid>https://ethaan.js.org/posts/2020/04/tuples-for-fun/</guid>
+      <description>As I have already mentioned on my previous posts, Python Javascript(ts) and Swift are some of my favorite languages out there, I really enjoy writting software with them, and this past days I got into how tuples work in these 3 languages.
+Tuples So what is a tuple? there might be many different ways to describe a Tuple Data type, but the easiest one I can think of right now is like.</description>
+    </item>
+    
+    <item>
+      <title>Baby Steps Typescript</title>
+      <link>https://ethaan.js.org/posts/2020/03/baby-steps-typescript/</link>
+      <pubDate>Mon, 16 Mar 2020 13:16:04 -0500</pubDate>
+      
+      <guid>https://ethaan.js.org/posts/2020/03/baby-steps-typescript/</guid>
+      <description>Intro Typescript as the repo and many other people mention is a superset of JavaScript that compiles to clean JavaScript output.
+NOTE If you are Totally new on Typescript, check out this amazing Understanding TypeScript’s type notation blog post
+If you are unsure if Typescript is or not a superset and what actually superset and subset means I recommend you to read this SO post
+Saying this, let&amp;rsquo;s start writting some JS and then the equivalent in Typescript.</description>
+    </item>
+    
+    <item>
+      <title>Whats Up</title>
+      <link>https://ethaan.js.org/posts/2020/03/whats-up/</link>
+      <pubDate>Sat, 14 Mar 2020 14:06:05 -0500</pubDate>
+      
+      <guid>https://ethaan.js.org/posts/2020/03/whats-up/</guid>
+      <description>I&amp;rsquo;ve always thought on writting stuff on the WWW, but I never got full hands to it, until now, so I would like to welcome you to what intends to be my new blog/site where you can find all about the things that I&amp;rsquo;m most interested in, you can expect to find stuff such as:
+ Music (mostly punk) Programming (Python, Javascript, Swift and bit of everything) WWII Podcast RPG games  Before digging into different topics I would like introduce myself.</description>
+    </item>
+    
+  </channel>
+</rss>

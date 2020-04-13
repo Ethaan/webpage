@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>react on Ethan Escareño Rosano</title>
+    <link>https://ethaan.js.org/tags/react/</link>
+    <description>Recent content in react on Ethan Escareño Rosano</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Mar 2020 13:16:04 -0500</lastBuildDate>
+    
+	<atom:link href="https://ethaan.js.org/tags/react/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Baby Steps Typescript</title>
+      <link>https://ethaan.js.org/posts/2020/03/baby-steps-typescript/</link>
+      <pubDate>Mon, 16 Mar 2020 13:16:04 -0500</pubDate>
+      
+      <guid>https://ethaan.js.org/posts/2020/03/baby-steps-typescript/</guid>
+      <description>Intro Typescript as the repo and many other people mention is a superset of JavaScript that compiles to clean JavaScript output.
+NOTE If you are Totally new on Typescript, check out this amazing Understanding TypeScript’s type notation blog post
+If you are unsure if Typescript is or not a superset and what actually superset and subset means I recommend you to read this SO post
+Saying this, let&amp;rsquo;s start writting some JS and then the equivalent in Typescript.</description>
+    </item>
+    
+  </channel>
+</rss>
