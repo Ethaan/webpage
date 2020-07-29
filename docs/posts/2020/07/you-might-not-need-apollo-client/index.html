@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.67.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="You Might Not Need Apollo (client) - Ethan Escareño Rosano">
+    <meta name="twitter:description" content="NOTE Here we are just talking about Apollo client implementation, not Apollo Server, that could be another topic.
+So you will start a new project, and you are luckly enought to choose the stack for this new project, for the frontend you decide to go with React, for state managment you think is OK to keep it simple and use hooks, while for sharing state React.Context can do the work, also TailwindCSS seems the option to go, and you will use Parcel, Rollup or Webpack, and now you have to decide about how to get domain data, so you decide to use Apollo Client, since you have an Apollo backend, you might want to take a look into using something like SWR &#43; Prisma/request.">
+    <meta name="twitter:site" content="https://ethaan.js.org/">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:image" content="https://ethaan.js.org/ethan.jpeg">
+    
+    
+    <meta property="og:locale" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="You Might Not Need Apollo (client) - Ethan Escareño Rosano">
+    <meta property="og:description" content="NOTE Here we are just talking about Apollo client implementation, not Apollo Server, that could be another topic.
+So you will start a new project, and you are luckly enought to choose the stack for this new project, for the frontend you decide to go with React, for state managment you think is OK to keep it simple and use hooks, while for sharing state React.Context can do the work, also TailwindCSS seems the option to go, and you will use Parcel, Rollup or Webpack, and now you have to decide about how to get domain data, so you decide to use Apollo Client, since you have an Apollo backend, you might want to take a look into using something like SWR &#43; Prisma/request.">
+    <meta property="og:url" content="https://ethaan.js.org/posts/2020/07/you-might-not-need-apollo-client/">
+    <meta property="og:site_name" content="Ethan Escareño Rosano">
+    <meta property="og:image" content="https://ethaan.js.org/ethan.jpeg">
+    
+    <title>You Might Not Need Apollo (client) - Ethan Escareño Rosano</title>
+
+    <meta name="author" content="Ethan Escareño">
+    <meta name="description" content="NOTE Here we are just talking about Apollo client implementation, not Apollo Server, that could be another topic.
+So you will start a new project, and you are luckly enought to choose the stack for this new project, for the frontend you decide to go with React, for state managment you think is OK to keep it simple and use hooks, while for sharing state React.Context can do the work, also TailwindCSS seems the option to go, and you will use Parcel, Rollup or Webpack, and now you have to decide about how to get domain data, so you decide to use Apollo Client, since you have an Apollo backend, you might want to take a look into using something like SWR &#43; Prisma/request.">
+
+    
+    
+
+    
+    
+
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Arvo:400,700">
+    <link rel="stylesheet" href="https://ethaan.js.org/css/theme.css">
+    <link rel="stylesheet" href="https://ethaan.js.org/css/chroma.dracula.css">
+</head>
+<body class="font-serif bg-gray-200 border-t-4 border-blue-500 antialiased">
+    <div class="w-full p-6 md:w-2/3 md:px-0 md:mx-auto xl:w-2/5">
+        <header class="mb-6">
+            
+            <div class="mb-6 md:flex md:items-center">
+                
+<div>
+    <a class="text-lg mb-8 inline-block" href="/">&larr; Back Home</a>
+
+    
+    
+    <h1 class="text-4xl font-bold">You Might Not Need Apollo (client)</h1>
+    <time datetime="2020-07-28 22:11:01 CDT">28 Jul 2020</time>
+    
+    
+    
+</div>
+
+            </div>
+
+            
+            
+        </header>
+
+        
+        
+<article class="mb-12">
+    <p><em>NOTE</em> Here we are just talking about Apollo client implementation, not Apollo Server, that could be another topic.</p>
+<p>So you will start a new project, and you are luckly enought to choose the stack for this new project, for the frontend you decide to go with <em>React</em>, for state managment you think is OK to keep it simple and use hooks, while for sharing state React.Context can do the work, also TailwindCSS seems the option to go, and you will use Parcel, Rollup or Webpack, and now you have to decide about how to get domain data, so you decide to use <a href="https://www.npmjs.com/package/@apollo/client">Apollo Client</a>, since you have an Apollo backend, you might want to take a look into using something like <a href="https://github.com/vercel/swr">SWR</a> + <a href="https://github.com/prisma-labs/graphql-request">Prisma/request</a>.</p>
+<p>The documentation itself for SWR put many examples but i will try to put a minimal example here.</p>
+<h2 id="configuration">Configuration.</h2>
+<p>This is the global configuration to be called on every hook call</p>
+<pre><code>import useSWR, { SWRConfig } from 'swr'
+import { request } from 'graphql-request';
+
+// GRAPHQL_ENDPOINT should be the URL of your backend
+const App = () =&gt; (
+  &lt;SWRConfig
+    value={{
+      fetcher: (...args: any) =&gt;
+        request(GRAPHQL_ENDPOINT, ...args)
+          .then((data: any) =&gt; data)
+          .catch((error: any) =&gt; Promise.reject(error)),
+    }}
+  &gt;
+    &lt;Layout&gt;
+      &lt;Routes /&gt;
+    &lt;/Layout&gt;
+  &lt;/SWRConfig&gt;
+);
+</code></pre><h2 id="query-data">Query Data</h2>
+<p>This is the easiest way to start getting data, swr will do the work of caching that data peer Key (in this case the query string)</p>
+<pre><code>const Profile = () =&gt; {
+  const query = `
+   query user {
+     _id
+     username
+   }
+  `
+  const variables = {}; // just to demostrate how to pass query + variables
+  const { data, error } = useSWR([query, variables], options);
+
+  if (error) return &lt;h1&gt;ERROR&lt;/h1&gt;
+  if (!data) return &lt;h1&gt;Loading...&lt;/h1&gt;
+
+  return (
+    &lt;&gt;
+     Hi {data.user.username}
+    &lt;/&gt;
+  )
+}
+</code></pre><h2 id="mutating-data">Mutating Data</h2>
+<pre><code>const Profile = () =&gt; {
+  const query = `
+   query user {
+     _id
+     username
+   }
+  `
+
+  const mutation = `
+   mutation UpdateUsername($username: string) {
+     updateUsername(username: $username) {
+       ok
+       errors {
+        message
+       }
+     }
+   }
+  `
+  const variables = {}; // just to demostrate how to pass query + variables
+  const [username, setUsername] = useState('');
+  const { data, error, mutate } = useSWR([query, variables], options);
+
+  if (error) return &lt;h1&gt;ERROR&lt;/h1&gt;
+  if (!data) return &lt;h1&gt;Loading...&lt;/h1&gt;
+
+  const handleUpdateUsername = async () =&gt; {
+    try {
+      // Update data on the backend
+      await request(GRAPHQL_ENDPOINT [mutation, { username }]);
+      // Here we can update the UI &quot;optimisticly&quot; since the above didn't throw an error, we can call mutate and show it on the UI.
+      await mutate(query, () =&gt; ({
+        ...data.user,
+        username,
+      }), false);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  return (
+    &lt;&gt;
+     Hi {data.user.username}
+     &lt;input onChange={(e) =&gt; setUsername(e.target.value)} /&gt;
+     &lt;button type=&quot;button&quot; onClick={handleUpdateUsername}&gt;Update&lt;/button&gt;
+    &lt;/&gt;
+  )
+}
+</code></pre><p>Easy right? here we are keeping things simple, don&rsquo;t take me wrong Apollo Client is great and you can achive amazing things with this, but as a college who wasn&rsquo;t really familiar with the new technologies on the frontend, after looking into the codebase made one single comment, &ldquo;why all this complexity for simple HTTP calls&rdquo; and that whats the &ldquo;aha&rdquo; moment for me there, for most of the cases you just want to get some data and you don&rsquo;t even want to update it, you just want to display it, and here SWR with prisma do the job perfectly.</p>
+<p>And thats it, on the current company i&rsquo;m working on, we are doing BIG efforts on migrate from Apollo =&gt; SWR + Prisma, we have atleast 50+ components that use the HOC &ldquo;graphql&rdquo; and some others that use the &ldquo;Query&rdquo; component, some of them are already using SWR other not, but we can already see gains on the UX.</p>
+
+
+    
+</article>
+
+
+        <footer>
+            <p>
+                &copy; 2020. Proudly made with 💕 with <a href="https://gohugo.io/" target="_blank">Hugo</a> and <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>.
+            </p>
+        </footer>
+    </div>
+
+    
+</body>
+</html>

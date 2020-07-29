@@ -6,21 +6,19 @@
     <description>Recent content in Posts on Ethan Escareño Rosano</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Apr 2020 19:19:07 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2020 22:11:01 -0500</lastBuildDate>
     
 	<atom:link href="https://ethaan.js.org/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Cover Letter</title>
-      <link>https://ethaan.js.org/posts/2020/04/cover-letter/</link>
-      <pubDate>Sun, 12 Apr 2020 19:19:07 -0500</pubDate>
+      <title>You Might Not Need Apollo (client)</title>
+      <link>https://ethaan.js.org/posts/2020/07/you-might-not-need-apollo-client/</link>
+      <pubDate>Tue, 28 Jul 2020 22:11:01 -0500</pubDate>
       
-      <guid>https://ethaan.js.org/posts/2020/04/cover-letter/</guid>
-      <description>Recluiter. Hi.
-As my Whats up  describe me at a personal level, this post inteent to describe myself as a Software Engineer.
-Backgroud. Been OK with the idea of spent 18hrs a day in front of the computer since i was 13years old, but not doing actually something productive until i was 20years old~.
-Work for a big IT company on the IT departament for 4years before switching to a remote-programming job, since then been wearing many hats on many startups.</description>
+      <guid>https://ethaan.js.org/posts/2020/07/you-might-not-need-apollo-client/</guid>
+      <description>NOTE Here we are just talking about Apollo client implementation, not Apollo Server, that could be another topic.
+So you will start a new project, and you are luckly enought to choose the stack for this new project, for the frontend you decide to go with React, for state managment you think is OK to keep it simple and use hooks, while for sharing state React.Context can do the work, also TailwindCSS seems the option to go, and you will use Parcel, Rollup or Webpack, and now you have to decide about how to get domain data, so you decide to use Apollo Client, since you have an Apollo backend, you might want to take a look into using something like SWR + Prisma/request.</description>
     </item>
     
     <item>
