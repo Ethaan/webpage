@@ -47,7 +47,6 @@ As a self-learn comming from Mexico, been on the USA remote industry of software
 
 2.- Can be enough, don't take my wrong, i do my best day to day get CS concepts, Algorithms, Data types, videos, ideas, still as a self learn ALWAYS remote employee, moving alone can be scare, how do you know you are going into the right direction? there are no mentors, its you and thats it
 
-
 ### The good things
 
 I consider myself as a enthusiast programmer, which like to go and understand things as far as my mind can go, trying day to day to learn more in deep about how to be a better programmer, reading all the blog-posts/books and watching all the videos i can get.
@@ -68,5 +67,4 @@ If you need someone with experience on startups, that is willing to work on any 
 
 I will do my best to prove the above statement, with my day to day work.
 
-
-And i think thats all i have to say to you, my future employer, if you got a position that uses Javascript/Typescript, Python or Swift, you might wanna take a look into my profile, i might be a good fit you (or not T_T).
+And i think thats all i have to say to you, my future employer, if you got a position that uses Javascript/Typescript, Python or Swift, you might wanna take a look into my profile, i might be a good fit you, or maybe not.
